@@ -112,7 +112,8 @@ export default function Body({modalAtivo, setModalAtivo}) {
 
 const BodyStyle = styled.main`
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    background-color:#bbcecee0;
 `
 
 const BotoesStyle = styled.div`

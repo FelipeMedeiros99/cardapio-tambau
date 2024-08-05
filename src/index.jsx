@@ -10,9 +10,10 @@ import "./style/index.css"
 function App(){
     const [modalAtivo, setModalAtivo] = useState(false)
     return(
-        <>
+        <>  
             <Header />
             <Body setModalAtivo={setModalAtivo} modalAtivo={modalAtivo}/>
+            <img className="imagem-fundo" src="https://i.ibb.co/g41TRrg/logo-pousada-tambau.png"/>
         </>
     )
 }

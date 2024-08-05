@@ -10,11 +10,12 @@ export default function Header(){
 
 
 const HeaderStyle = styled.header`
-    background-color: #0fadc3;
+    background-color: #0fadc3;  
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
+    z-index: 2;
 
     img{
         max-width: 100%;

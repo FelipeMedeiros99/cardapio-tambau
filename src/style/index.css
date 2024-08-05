@@ -1,9 +1,16 @@
 .root, html, body{
     width: 100%;
     height: 100%;
-    background-color: #bbcece;
+
 }
 
 .root{
     position: relative;
+}
+
+.imagem-fundo{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
 }
