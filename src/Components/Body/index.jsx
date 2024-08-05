@@ -113,7 +113,7 @@ export default function Body({modalAtivo, setModalAtivo}) {
 const BodyStyle = styled.main`
     width: 100%;
     min-height: 100%;
-    background-color:#bbcecee0;
+    background-color:#afcdcde0;
 `
 
 const BotoesStyle = styled.div`
@@ -210,6 +210,6 @@ const CaixaProdutoStyle = styled.div`
 
     span{
         font-weight: 700;
-        font-size: 17px;
+        font-size: 15px;
     }
 `
