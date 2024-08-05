@@ -1,15 +1,15 @@
 const cardapio = {
-    "Refeicoes": [
+    "Refeições": [
         {
         "imagem": "https://i.ibb.co/KhGPM4V/file-mignon-a-parmegiana.jpg",
         "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
+        "preco": {"1 pessoa": 550, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
         "imagem": "https://i.ibb.co/KhGPM4V/file-mignon-a-parmegiana.jpg",
         "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
+        "preco": 874,
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
@@ -63,7 +63,7 @@ const cardapio = {
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         }
     ],
-    "Petiscos": [
+    "Petíscos": [
         {
         "imagem": "https://i.ibb.co/KhGPM4V/file-mignon-a-parmegiana.jpg",
         "nome": "File mignon à parmegiana",
