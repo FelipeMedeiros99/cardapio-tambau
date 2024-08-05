@@ -1,8 +1,10 @@
 import styled from "styled-components"
-import cardapio from "../../data"
 import { useEffect, useState } from "react"
 
-export default function Body() {
+import cardapio from "../../data"
+import Modal from "../Modal"
+
+export default function Body({modalAtivo, setModalAtivo}) {
 
     // vars
     const produtosCardapio = cardapio
@@ -11,7 +13,7 @@ export default function Body() {
 
     // states
     const [produtosVisiveis, setProdutosVisiveis] = useState({})
-
+    const [dadosModal, setDadosModal] = useState({})
     // effect
     useEffect(() => {
         let estadoInicialDosProdutos = {}
@@ -31,6 +33,13 @@ export default function Body() {
 
     function formatarPreco(preco) {
         return String(preco.toFixed(2)).replace(".", ",")
+    }
+
+    function ativarModal(dadosProduto){
+        console.log("ativando modal")
+        setModalAtivo(true)
+        setDadosModal(dadosProduto)
+
     }
 
     // componentes
@@ -58,7 +67,7 @@ export default function Body() {
     function CaixaProduto({ dadosProduto }) {
         const { preco, imagem, descricao, nome } = dadosProduto
         return (
-            <CaixaProdutoStyle>
+            <CaixaProdutoStyle onClick={()=>ativarModal(dadosProduto)}>
                 <img src={imagem} alt={descricao} />
                 <p>{nome}</p>
 
@@ -96,6 +105,7 @@ export default function Body() {
     return (
         <BodyStyle>
             <Botoes />
+            {modalAtivo && <Modal dadosProduto={dadosModal} setModalAtivo={setModalAtivo}/>}
         </BodyStyle>
     )
 }
