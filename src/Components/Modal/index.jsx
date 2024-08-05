@@ -25,7 +25,7 @@ export default function Modal({dadosProduto, setModalAtivo}){
         }
         return (
 
-            <div className="precos">
+            <div className="precos solo">
                 <span>R${formatarPreco(preco)}</span>
             </div>
         )
@@ -79,7 +79,13 @@ const ModalStyle = styled.div`
     .precos{
         display: flex;
         position: absolute;
+        align-items: left;
         bottom: 10px;
+    }
+    
+    .solo{
+       transform: translateX(50%);
+       bottom: 20px;
     }
 
     .precos p{
@@ -107,6 +113,7 @@ const ModalStyle = styled.div`
     span{
         font-weight: 700;
         font-size: 30px;
+        margin-top: 2px;
     }
 
     .container-icone{
