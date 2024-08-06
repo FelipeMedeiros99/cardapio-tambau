@@ -79,8 +79,8 @@ const ModalStyle = styled.div`
     .precos{
         display: flex;
         position: absolute;
-        align-items: left;
         bottom: 10px;
+        left: 0;
     }
     
     .solo{
