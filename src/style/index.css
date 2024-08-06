@@ -16,6 +16,10 @@
     z-index: -1;
 }
 
+*{
+    font-family: "Roboto Slab", serif;
+}
+
 /* Estilizando a barra de rolagem para navegadores baseados em WebKit */
 ::-webkit-scrollbar {
     width: 3px; /* Largura da barra de rolagem */

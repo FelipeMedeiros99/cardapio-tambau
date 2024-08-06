@@ -49,16 +49,23 @@ export default function Body({modalAtivo, setModalAtivo}) {
         if (precosVariados) {
             return (
                 <div className="precos">
-                    <p>1 pessoa: <span>R${formatarPreco(preco["1 pessoa"])}</span></p>
+                    <div className="container-valores">
+                        <p>1 pessoa </p>
+                        <p className="preco">R${formatarPreco(preco["1 pessoa"])}</p>
+
+                    </div>
                     <hr />
-                    <p>2 pessoas: <span>R${formatarPreco(preco["2 pessoas"])}</span></p>
+                    <div className="container-valores">
+                        <p>2 pessoas </p>
+                        <p className="preco">R${formatarPreco(preco["2 pessoas"])}</p>
+                    </div>
                 </div>
             )
         }
         return (
 
             <div className="precos">
-                <span>R${formatarPreco(preco)}</span>
+                <p className="preco">R${formatarPreco(preco)}</p>
             </div>
         )
 
@@ -181,14 +188,19 @@ const CaixaProdutoStyle = styled.div`
     color: #808080;
 
     p{
-        font-size:20px; 
-        font-weight: 400px;
+        
     }
 
     .nome{
-        margin-top: 8px;
+        /* display: flex;
+        text-align: center;
+        justify-content: center; */
+        display: grid;
+        place-items: center;
         overflow-y: auto;
         height: 50px;
+        font-size:15px; 
+        font-weight: 700;
     }
 
     .precos{
@@ -200,7 +212,7 @@ const CaixaProdutoStyle = styled.div`
 
     .precos p{
         font-size: 15px;
-        font-weight: 100;
+        font-weight: 400;
 
     }
 
@@ -213,8 +225,16 @@ const CaixaProdutoStyle = styled.div`
         font-size: 0px;
     }
 
-    span{
-        font-weight: 700;
+
+    .container-valores{
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+    }
+
+    .container-valores .preco{
         font-size: 15px;
+        font-weight: 700;
+        margin-top: 2px;
     }
 `
