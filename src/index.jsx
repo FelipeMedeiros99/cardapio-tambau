@@ -13,7 +13,7 @@ function App(){
         <>  
             <Header />
             <Body setModalAtivo={setModalAtivo} modalAtivo={modalAtivo}/>
-            <img className="imagem-fundo" src="https://i.ibb.co/g41TRrg/logo-pousada-tambau.png"/>
+            <img className="imagem-fundo" src="./imagens/logo-tambau.png"/>
         </>
     )
 }
