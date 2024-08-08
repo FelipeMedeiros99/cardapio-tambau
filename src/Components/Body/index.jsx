@@ -78,7 +78,9 @@ export default function Body({modalAtivo, setModalAtivo}) {
         const { preco, imagem, descricao, nome } = dadosProduto
         return (
             <CaixaProdutoStyle onClick={()=>ativarModal(dadosProduto)}>
-                <img src={imagem} alt={descricao} />
+                <div className="container-imagem">
+                    <img src={imagem} alt={descricao} />
+                </div>
                 <p className="nome">{nome}</p>
                 <Precos preco={preco} />
 
@@ -212,7 +214,8 @@ const CaixaProdutoStyle = styled.div`
         display: grid;
         place-items: center;
         overflow-y: auto;
-        height: 50px;
+        height: 100%;
+        margin-bottom: 45px;
         font-size:15px; 
         font-weight: 700;
     }
@@ -231,7 +234,8 @@ const CaixaProdutoStyle = styled.div`
     }
 
     img{
-        width: 100%;
+        max-height: 100px;
+        max-width: 136px;
         border-radius: 10px;
     }
 

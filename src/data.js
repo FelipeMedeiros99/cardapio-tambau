@@ -100,19 +100,19 @@ const cardapio = {
     ],
     "Lanches": [
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/hamburguer.webp",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/hamburguer.webp",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/hamburguer.webp",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
@@ -145,31 +145,31 @@ const cardapio = {
     ],
     "Bebidas": [
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/vinho.jpg",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/vinho.jpeg",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/vinho.jpeg",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/vinho.jpeg",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
-        "imagem": "./imagens/file-mignon.jpeg",
+        "imagem": "./imagens/vinho.jpeg",
         "nome": "File mignon à parmegiana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
         "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
