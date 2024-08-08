@@ -51,7 +51,9 @@ export default function Modal({dadosProduto, setModalAtivo}){
                 <div className="container-icone" onClick={()=>setModalAtivo(false)}>
                     <IoCloseOutline />
                 </div>
-                <img src={imagem} alt={descricao} />
+                <div className="container-imagem">
+                    <img src={imagem} alt={descricao} />
+                </div>
                 <p className="nome">{nome}</p>
                 <p className="descricao">{descricao}</p>
                 <Precos preco={preco} />
@@ -72,7 +74,19 @@ const ModalStyle = styled.div`
     z-index: 3;
 
     .container-modal{
-        padding: 30px 20px 20px 20px;
+        display: grid;
+        grid-template-rows:  120px auto 1fr;
+        height: 400px;
+        width: 100%;
+        max-width: 300px;
+        padding: 30px 20px 73px 20px;
+        background-color: white;
+        text-align: center;
+        color: #808080;
+        border-radius: 20px;
+        box-shadow: 0 0 30px #0000005e; 
+        position: relative;
+        /* padding: 30px 20px 20px 20px;
         position: relative;
         height: 400px;
         width: 100%;
@@ -81,7 +95,7 @@ const ModalStyle = styled.div`
         text-align: center;
         color: #808080;
         border-radius: 20px;
-        box-shadow: 0 0 30px #0000005e;
+        box-shadow: 0 0 30px #0000005e; */
     }
 
     p{
@@ -107,8 +121,7 @@ const ModalStyle = styled.div`
     }
 
     img{
-        width: 100%;
-        max-width: 200px;
+        height: 100%;
         border-radius: 10px;
     }
 
@@ -135,5 +148,10 @@ const ModalStyle = styled.div`
         top: 5px;
         font-size: 30px;
         font-weight: 100;
+    }
+
+    .descricao{
+        max-height: 100px;
+        overflow-y: auto;
     }
 `

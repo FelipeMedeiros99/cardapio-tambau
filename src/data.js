@@ -4,7 +4,7 @@ const cardapio = {
         "imagem": "./imagens/file-mignon.jpeg",
         "nome": "File à cubana",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
+        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas. File mignon, banana à milanesa, servido com arroz à grega e batatas fritas. File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
         "imagem": "./imagens/file-mignon.jpeg",
@@ -58,7 +58,7 @@ const cardapio = {
         "imagem": "./imagens/file-mignon.jpeg",
         "nome": "Peixe frito com arroz de cuxá à moda da casa",
         "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "Pescada amarela em posta, arroz de cuxá, vinagrete e farofa."
+        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas. File mignon, banana à milanesa, servido com arroz à grega e batatas fritas. File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
         },
         {
             "imagem": "./imagens/file-mignon.jpeg",
