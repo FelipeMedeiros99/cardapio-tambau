@@ -1,14 +1,28 @@
 import styled from "styled-components"
 import { IoCloseOutline } from "react-icons/io5";
+import { useRef } from "react";
 
 
 export default function Modal({dadosProduto, setModalAtivo}){
     // vars
     const {imagem, nome, preco, descricao} = dadosProduto
 
+    // hooks
+    const elementosModal = useRef(null)
+
     // functions
     function formatarPreco(preco) {
         return String(preco.toFixed(2)).replace(".", ",")
+    }
+
+    function verificarClickInterno(event){
+        const elementoClicado = event.target
+        const modal = elementosModal.current
+        const oClickFoiDentroDoModal = modal.contains(elementoClicado)
+        if(!oClickFoiDentroDoModal){
+            setModalAtivo(false)
+        }
+        
     }
 
     // Components
@@ -32,9 +46,8 @@ export default function Modal({dadosProduto, setModalAtivo}){
     }
 
     return(
-        <ModalStyle>
-
-            <div className="container-modal">
+        <ModalStyle onClick={verificarClickInterno} >
+            <div className="container-modal" ref={elementosModal}>
                 <div className="container-icone" onClick={()=>setModalAtivo(false)}>
                     <IoCloseOutline />
                 </div>

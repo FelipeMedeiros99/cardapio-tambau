@@ -1,5 +1,9 @@
 import styled from "styled-components"
 import { useEffect, useState } from "react"
+import { GiKnifeFork } from "react-icons/gi";
+import { GiHamburger } from "react-icons/gi";
+import { CiFries } from "react-icons/ci";
+import { BiSolidDrink } from "react-icons/bi";
 
 import cardapio from "../../data"
 import Modal from "../Modal"
@@ -9,7 +13,7 @@ export default function Body({modalAtivo, setModalAtivo}) {
     // vars
     const produtosCardapio = cardapio
     const nomesBotoes = Object.keys(cardapio)
-
+    const iconesBotoes = [<GiKnifeFork />, <GiHamburger />, <CiFries />, <BiSolidDrink />]
 
     // states
     const [produtosVisiveis, setProdutosVisiveis] = useState({})
@@ -36,7 +40,6 @@ export default function Body({modalAtivo, setModalAtivo}) {
     }
 
     function ativarModal(dadosProduto){
-        console.log("ativando modal")
         setModalAtivo(true)
         setDadosModal(dadosProduto)
 
@@ -98,7 +101,12 @@ export default function Body({modalAtivo, setModalAtivo}) {
                 {nomesBotoes.map((nomeBotao, index) => {
                     return (
                         <div key={index} className="container-categoria">
-                            <button onClick={() => alterarVisibilidadeProdutos(nomeBotao)}>{nomeBotao}</button>
+                            
+                            <button onClick={()=>alterarVisibilidadeProdutos(nomeBotao)}>
+                                {nomeBotao} 
+                                {iconesBotoes[index]}
+                            </button>
+                            
                             <ProdutosDaCategoria
                                 categoria={produtosCardapio[nomeBotao]} nomeBotao={nomeBotao} />
                         </div>
@@ -135,6 +143,9 @@ const BotoesStyle = styled.div`
     }
 
     button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         border: none;
         box-shadow: 0 0 3px #323d6382;
@@ -158,9 +169,12 @@ const BotoesStyle = styled.div`
         display: none;
     }
 
-    .visivel{
-
+    svg{
+        width: 18px;
+        height: 18px;
+        margin-left: 3px;
     }
+
 `
 
 const ProdutosDaCategoriaStyle = styled.div`

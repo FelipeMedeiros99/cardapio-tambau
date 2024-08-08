@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default function Header(){
     return(
         <HeaderStyle >
-            <img src="https://i.ibb.co/g41TRrg/logo-pousada-tambau.png" alt="logo tambaú" />
+            <img src="./imagens/logo-tambau.png" alt="logo tambaú" />
         </HeaderStyle>
     )
 }
