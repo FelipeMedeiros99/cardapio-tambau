@@ -50,18 +50,19 @@ export default function Body({modalAtivo, setModalAtivo}) {
     function Precos({ preco }) {
         const precosVariados = Object.keys(preco).length > 1
         if (precosVariados) {
+            const precos = Object.keys(preco)
             return (
+                
                 <div className="precos">
-                    <div className="container-valores">
-                        <p>1 pessoa </p>
-                        <p className="preco">R${formatarPreco(preco["1 pessoa"])}</p>
-
-                    </div>
-                    <hr />
-                    <div className="container-valores">
-                        <p>2 pessoas </p>
-                        <p className="preco">R${formatarPreco(preco["2 pessoas"])}</p>
-                    </div>
+                    {precos.map((tituloDoPreco, index)=>(
+                        <>
+                            <div key={index} className="container-valores">
+                                <p>{tituloDoPreco}</p>
+                                <p className="preco">R${formatarPreco(preco[tituloDoPreco])}</p>
+                            </div>
+                            {index===0?<hr />:''}
+                        </>
+                    ))}
                 </div>
             )
         }
