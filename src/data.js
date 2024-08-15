@@ -240,6 +240,12 @@ const cardapio = {
             "preco": {"Copo": 6, "Jarra": 12},
             "descricao": "Suco de maracujá"
         },
+        {
+            "imagem": "./imagens/bebidas/suco-.jpg",
+            "nome": "Suco de cajá",
+            "preco": {"Copo": 6, "Jarra": 12},
+            "descricao": "Suco de cajá"
+        },
 
 
 
