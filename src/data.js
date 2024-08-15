@@ -145,52 +145,28 @@ const cardapio = {
     ],
     "Bebidas": [
         {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
-            "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
-        },
-        {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
-            "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
-        },
-        {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
-            "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
-        },
-        {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
-            "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
-        },
-        {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol lata",
+            "imagem": "./imagens/bebidas/skol.png",
+            "nome": "Cerveja Skol (lata)",
             "preco": 7,
-            "descricao": "Cerveja skol"
-        },
-        {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
-            "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
+            "descricao": "Cerveja skol (lata)"
         },
         {   
-            "imagem": "./imagens/brahma.jpg",
-            "nome": "Cerveja brahma lata",
+            "imagem": "./imagens/bebidas/brahma.jpg",
+            "nome": "Cerveja Brahma puro malte (lata)",
             "preco": 7,
-            "descricao": "Cerveja Brahma puro malte"
+            "descricao": "Cerveja Brahma puro malte (lata)"
         },
         {
-            "imagem": "./imagens/skol.png",
-            "nome": "Cerveja Skol",
+            "imagem": "./imagens/bebidas/heineken.png",
+            "nome": "Cerveja Heineken",
             "preco": {"long neck": 12, "lata": 7},
             "descricao": "Cerveja skol"
+        },
+        {
+            "imagem": "./imagens/bebidas/budweiser.png",
+            "nome": "Cerveja Budweiser",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja Budweiser"
         },
     ],
     "Porções": [

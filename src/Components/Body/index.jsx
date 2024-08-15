@@ -198,7 +198,7 @@ const CaixaProdutoStyle = styled.div`
     text-align: center;
     margin: 10px;
     background-color: white;
-    width: 160px;
+    width: 150px;
     height: 200px;
     padding: 5px;
     border-radius: 20px;
@@ -230,7 +230,7 @@ const CaixaProdutoStyle = styled.div`
     }
 
     .precos p{
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
 
     }
@@ -250,7 +250,7 @@ const CaixaProdutoStyle = styled.div`
         display: flex;
         flex-direction: column;
         padding: 3px;
-        min-width: 80px;
+        min-width: 75px;
     }
 
     .container-valores .preco{
