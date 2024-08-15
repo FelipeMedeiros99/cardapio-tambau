@@ -181,11 +181,68 @@ const cardapio = {
             "descricao": "Cerveja Eisenbahn"
         },
         {
-            "imagem": "./imagens/bebidas/eisenbahn.png",
-            "nome": "Cerveja Petra",
-            "preco": {"long neck": 11, "lata": 7},
-            "descricao": "Cerveja Petra"
+            "imagem": "./imagens/bebidas/cocacola.png",
+            "nome": "Coca-cola (lata)",
+            "preco": 7,
+            "descricao": "Coca-cola (lata)"
         },
+        {
+            "imagem": "./imagens/bebidas/guarana.png",
+            "nome": "Guaraná (lata)",
+            "preco": 7,
+            "descricao": "Guaraná (lata)"
+        },
+        {
+            "imagem": "./imagens/bebidas/fanta-laranja.png",
+            "nome": "Fanta laranja (lata)",
+            "preco": 7,
+            "descricao": "Fanta laranja (lata)"
+        },
+        {
+            "imagem": "./imagens/bebidas/jesus.png",
+            "nome": "Guaraná Jesus (lata)",
+            "preco": 7,
+            "descricao": "Guaraná Jesus (lata)"
+        },
+        {
+            "imagem": "./imagens/bebidas/redbull.png",
+            "nome": "Red Bull",
+            "preco": 16,
+            "descricao": "Red Bull"
+        },
+        {
+            "imagem": "./imagens/bebidas/agua.png",
+            "nome": "Água sem gás (500ml)",
+            "preco": 4,
+            "descricao": "Água sem gás (500ml)"
+        },
+        {
+            "imagem": "./imagens/bebidas/agua-com-gas.png",
+            "nome": "Água com gás (500ml)",
+            "preco": 4.5,
+            "descricao": "Água sem gás (500ml)"
+        },
+        {
+            "imagem": "./imagens/bebidas/suco-caja.jpg",
+            "nome": "Suco de cajá",
+            "preco": {"Copo": 6, "Jarra": 12},
+            "descricao": "Suco de cajá"
+        },
+        {
+            "imagem": "./imagens/bebidas/suco-abacaxi.jpg",
+            "nome": "Suco de abacaxi",
+            "preco": {"Copo": 6, "Jarra": 12},
+            "descricao": "Suco de abacaxi"
+        },
+        {
+            "imagem": "./imagens/bebidas/suco-maracuja.jpg",
+            "nome": "Suco de maracujá",
+            "preco": {"Copo": 6, "Jarra": 12},
+            "descricao": "Suco de maracujá"
+        },
+
+
+
     ],
     "Porções": [
         {
