@@ -145,35 +145,53 @@ const cardapio = {
     ],
     "Bebidas": [
         {
-        "imagem": "./imagens/vinho.jpg",
-        "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
         },
         {
-        "imagem": "./imagens/vinho.jpeg",
-        "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
         },
         {
-        "imagem": "./imagens/vinho.jpeg",
-        "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
         },
         {
-        "imagem": "./imagens/vinho.jpeg",
-        "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
         },
         {
-        "imagem": "./imagens/vinho.jpeg",
-        "nome": "File mignon à parmegiana",
-        "preco": {"1 pessoa": 55, "2 pessoas": 95},
-        "descricao": "File mignon, banana à milanesa, servido com arroz à grega e batatas fritas."
-        }
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol lata",
+            "preco": 7,
+            "descricao": "Cerveja skol"
+        },
+        {
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
+        },
+        {   
+            "imagem": "./imagens/brahma.jpg",
+            "nome": "Cerveja brahma lata",
+            "preco": 7,
+            "descricao": "Cerveja Brahma puro malte"
+        },
+        {
+            "imagem": "./imagens/skol.png",
+            "nome": "Cerveja Skol",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja skol"
+        },
     ],
     "Porções": [
         {

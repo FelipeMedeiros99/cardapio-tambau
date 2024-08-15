@@ -67,9 +67,10 @@ export default function Body({modalAtivo, setModalAtivo}) {
             )
         }
         return (
-
             <div className="precos">
-                <p className="preco">R${formatarPreco(preco)}</p>
+                <div className="container-valores">
+                    <p className="preco">R${formatarPreco(preco)}</p>
+                </div>
             </div>
         )
 
@@ -197,7 +198,7 @@ const CaixaProdutoStyle = styled.div`
     text-align: center;
     margin: 10px;
     background-color: white;
-    width: 150px;
+    width: 160px;
     height: 200px;
     padding: 5px;
     border-radius: 20px;
@@ -249,6 +250,7 @@ const CaixaProdutoStyle = styled.div`
         display: flex;
         flex-direction: column;
         padding: 3px;
+        min-width: 80px;
     }
 
     .container-valores .preco{

@@ -37,7 +37,7 @@ export default function Modal({dadosProduto, setModalAtivo}){
                         {precos.map((tituloDoPreco, index)=>(
                             <>
                                 <div key={index} className="container-valores">
-                                    <p>{tituloDoPreco}: <span>R${formatarPreco(preco[tituloDoPreco])}</span></p>
+                                    <p>{tituloDoPreco}: <br /> <span>R${formatarPreco(preco[tituloDoPreco])}</span></p>
                                 </div>
                                 {index===0?<hr />:''}
                             </>
@@ -46,18 +46,13 @@ export default function Modal({dadosProduto, setModalAtivo}){
                 )
 
             }
-            // return (
-            //     <div className="precos">
-            //         <p>1 pessoa: <span>R${formatarPreco(preco["1 pessoa"])}</span></p>
-            //         <hr />
-            //         <p>2 pessoas: <span>R${formatarPreco(preco["2 pessoas"])}</span></p>
-            //     </div>
-            // )
         }
         return (
 
             <div className="precos solo">
-                <span>R${formatarPreco(preco)}</span>
+                <div className="container-valores">
+                    <p><span>R${formatarPreco(preco)}</span></p>
+                </div>
             </div>
         )
     }
@@ -103,17 +98,13 @@ const ModalStyle = styled.div`
         border-radius: 20px;
         box-shadow: 0 0 30px #0000005e; 
         position: relative;
-        /* padding: 30px 20px 20px 20px;
-        position: relative;
-        height: 400px;
-        width: 100%;
-        max-width: 300px;
-        background-color: white;
-        text-align: center;
-        color: #808080;
-        border-radius: 20px;
-        box-shadow: 0 0 30px #0000005e; */
     }
+
+
+    .container-valores{
+        min-width: 150px;
+    }
+
 
     p{
         font-size:20px; 
@@ -123,15 +114,12 @@ const ModalStyle = styled.div`
     .precos{
         display: flex;
         position: absolute;
+        width: 100%;
+        justify-content: center;
         bottom: 10px;
         left: 0;
     }
     
-    .solo{
-       transform: translateX(50%);
-       bottom: 20px;
-    }
-
     .precos p{
         font-size:25px;
         font-weight: 100;
