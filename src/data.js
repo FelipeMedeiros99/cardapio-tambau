@@ -160,13 +160,31 @@ const cardapio = {
             "imagem": "./imagens/bebidas/heineken.png",
             "nome": "Cerveja Heineken",
             "preco": {"long neck": 12, "lata": 7},
-            "descricao": "Cerveja skol"
+            "descricao": "Cerveja Heineken"
         },
         {
             "imagem": "./imagens/bebidas/budweiser.png",
             "nome": "Cerveja Budweiser",
             "preco": {"long neck": 12, "lata": 7},
             "descricao": "Cerveja Budweiser"
+        },
+        {
+            "imagem": "./imagens/bebidas/stella.png",
+            "nome": "Cerveja Stella Artois",
+            "preco": {"long neck": 12, "lata": 7},
+            "descricao": "Cerveja Stella Artois"
+        },
+        {
+            "imagem": "./imagens/bebidas/eisenbahn.png",
+            "nome": "Cerveja Eisenbahn",
+            "preco": {"long neck": 11, "lata": 7},
+            "descricao": "Cerveja Eisenbahn"
+        },
+        {
+            "imagem": "./imagens/bebidas/eisenbahn.png",
+            "nome": "Cerveja Petra",
+            "preco": {"long neck": 11, "lata": 7},
+            "descricao": "Cerveja Petra"
         },
     ],
     "Porções": [
