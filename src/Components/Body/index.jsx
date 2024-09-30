@@ -4,6 +4,10 @@ import { GiKnifeFork } from "react-icons/gi";
 import { GiHamburger } from "react-icons/gi";
 import { CiFries } from "react-icons/ci";
 import { BiSolidDrink } from "react-icons/bi";
+import { FaBowlFood } from "react-icons/fa6";
+import { TbSoup } from "react-icons/tb";
+import { RiDrinks2Line } from "react-icons/ri";
+
 
 import cardapio from "../../data"
 import Modal from "../Modal"
@@ -13,7 +17,15 @@ export default function Body({modalAtivo, setModalAtivo}) {
     // vars
     const produtosCardapio = cardapio
     const nomesBotoes = Object.keys(cardapio)
-    const iconesBotoes = [<GiKnifeFork />, <GiHamburger />, <CiFries />, <BiSolidDrink />]
+    const iconesBotoes = [
+    <GiKnifeFork />, 
+    <GiHamburger />, 
+    <CiFries />, 
+    <FaBowlFood/>,
+    <TbSoup />,
+    <RiDrinks2Line/>,
+    <BiSolidDrink />, 
+    ]
 
     // states
     const [produtosVisiveis, setProdutosVisiveis] = useState({})
@@ -36,7 +48,7 @@ export default function Body({modalAtivo, setModalAtivo}) {
     }
 
     function formatarPreco(preco) {
-        return String(preco.toFixed(2)).replace(".", ",")
+        return String(Number(preco).toFixed(2)).replace(".", ",")
     }
 
     function ativarModal(dadosProduto){
