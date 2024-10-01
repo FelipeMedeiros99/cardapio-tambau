@@ -34,7 +34,7 @@ export default function Body({modalAtivo, setModalAtivo}) {
     useEffect(() => {
         let estadoInicialDosProdutos = {}
         nomesBotoes.forEach((chave) => {
-            estadoInicialDosProdutos[chave] = true
+            estadoInicialDosProdutos[chave] = false
         })
         setProdutosVisiveis(estadoInicialDosProdutos)
     }, [])
