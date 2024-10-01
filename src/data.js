@@ -415,7 +415,7 @@ const cardapio = {
         },
         {
             "imagem": "./imagens/bebidas_c_a/lata-cerveja-simbolo.png",
-            "nome": "BRAHMA PURO MALTE (Long neck)",
+            "nome": "BRAHMA PURO MALTE (lata)",
             "preco": 7.00,
             "descricao": ""
         },
