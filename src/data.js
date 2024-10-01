@@ -32,8 +32,8 @@ const cardapio = {
             "descricao": "Arroz branco, batata frita (ou purê) e salada de legumes."
         },
         {
-            "imagem": "./imagens/refeicoes/simbolo-carne.png",
-            "nome": "Filé à Parmegiana",
+            "imagem": "./imagens/refeicoes/simbolo-frango.png",
+            "nome": "Filé de frango à Parmegiana",
             "preco": { "1 pessoa": 45, "2 pessoas": 90 },
             "descricao": "Filé de frango à milanesa, presunto, queijo, molho sugo, purê de batata e arroz branco."
         },
