@@ -175,7 +175,7 @@ const cardapio = {
         },
         {
             "imagem": "./imagens/petiscos/peixe-simbolo.png",
-            "nome": "Isca de Peixe (molho rose)",
+            "nome": "Isca de Peixe (molho rosé)",
             "preco": 80.00,
             "descricao": ""
         },
@@ -254,7 +254,7 @@ const cardapio = {
         {
             "imagem": "./imagens/bebidas_s_a/simbolo-agua.png",
             "nome": "ÁGUA COM GÁS 500ml",
-            "preco": 4.50,
+            "preco": 5.00,
             "descricao": ""
         },
         {
