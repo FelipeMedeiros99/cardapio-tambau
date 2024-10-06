@@ -469,7 +469,7 @@ const cardapio = {
         },
         {
             "imagem": "./imagens/bebidas_c_a/whisky-simbolo.png",
-            "nome": "WHISKY BUCHAVAN'S DELUXE (DOSE)",
+            "nome": "WHISKY BUCHANAN'S DELUXE (DOSE)",
             "preco": 20.00,
             "descricao": ""
         },
