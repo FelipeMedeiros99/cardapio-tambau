@@ -37,7 +37,7 @@ export default function Body({modalAtivo, setModalAtivo}) {
             estadoInicialDosProdutos[chave] = false
         })
         setProdutosVisiveis(estadoInicialDosProdutos)
-    }, [])
+    }, [setProdutosVisiveis])
 
 
     // functions 
