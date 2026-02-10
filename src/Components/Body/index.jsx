@@ -12,11 +12,13 @@ import { RiDrinks2Line } from "react-icons/ri";
 import cardapio from "../../data"
 import Modal from "../Modal"
 
+
+const nomesBotoes = Object.keys(cardapio)
+const produtosCardapio = cardapio
+
 export default function Body({modalAtivo, setModalAtivo}) {
 
     // vars
-    const produtosCardapio = cardapio
-    const nomesBotoes = Object.keys(cardapio)
     const iconesBotoes = [
     <GiKnifeFork />, 
     <GiHamburger />, 
